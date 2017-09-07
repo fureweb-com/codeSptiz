@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+</head>
+<style>
+    @keyframes ani {
+        from{box-shadow:0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), inset 0 0 0 10px rgba(255, 255, 255, 0.3), inset 0 0 0 20px rgba(255, 255, 255, 0.3); border-radius: 50%; margin: 0px}
+        to{box-shadow:0 0 0 10px rgba(0, 0, 0, 0.3), 0 0 0 20px rgba(0, 0, 0, 0.3), inset 5px 5px 0 10px rgba(0, 0, 0, 0.3), inset 10px 10px 0 20px rgba(0, 0, 0, 0.3); border-radius: 50%; margin: 20px}
+    }
+</style>
+<body style="margin:20px; padding: 0">
+<!-- <div style="animation:ani 2s linear alternate infinite; 
+border: 10px solid rgba(0,0,0,0.5); width: 100px; height: 100px; background:blue; box-sizing: border-box;">
+a</div> -->
+
+<!-- <div style="background: brown; border-radius: 15px; outline: 10px solid brown; border: 1px dashed #fff; color: #fff; box-shadow: 0 0 0 10px brown">stitched</div> -->
+
+<div style="background: yellow; border-radius: 15px; outline: 10px solid rgba(0, 255, 0, 0.5); border: 1px dashed #fff; color: #fff; box-shadow: 0 0 0 10px red">stitched</div>
+
+<!-- 개행 태그에 대함. -->
+<!-- 인라인요소에서는 텍스트 앨리먼트가 여러번 등장하든 말든 그냥 공백으로 처리된다. 인라인 블록 안에 들어있는 개행문자가 공백을 만들어냄. -->
+
+
+<!-- 보더 백그라운드와 보더를 걸고 패딩 많이 주면 색 혼합 처리.. 보더박스 잘 쓰면 패딩이 필요 없다. -->
+<!-- 보더와 패딩을 알아서 블랜딩해서 씀. 보더는 이미지적용하고, 알파값도 줄 수 있음. 그걸 응용하라고 있는거임 -->
+<!-- 임다중 백그라운드 지원하지 않는 IE9, IE10에서도 보더백그라운드와 보더를 깔아서 잘 효과를 줄 수 있다. -->
+
+<!-- boxshadow x, y, blur, 확장, 색깔  -->
+<!-- boxshadow는 공간을 못 차지한다. margin이 있어야 차지하는 것 처럼 보이게 된다. 사실상 자체만으로는 공간을 먹을 수 없음. 실체가 없다! -->
+
+<!-- 뒤에나오는 앨리먼트가 이기게 되어있다. 같은 박스 쉐도우가 먹힌 앨리먼트끼리도! -->
+
+<!-- 박스쉐도우는 컴마로 찍은 순서대로 랜더링하는게 아니고, 뒤에서부터 앞으로 그려나간다. -->
+
+
+<!-- 박스 쉐도우의 장점! border-radius를 따라온다. -->
+</body>
+</html>
